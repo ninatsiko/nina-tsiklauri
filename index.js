@@ -1,78 +1,45 @@
-//console.log('hello world');
+//task 1
+let x = 28;
+let y = 21;
+let k = ('ანა ლევანიზე 7 წლით უფროსია');
+let z=x-y;
+console.log(z);
+console.log(k);
 
-//console.log("second log");
+//task 2
 
-//primitv types 
+let StudentsNames = ['John', 'Sam', 'Ann', 'Will', 'Andrew', 'joseph', 'Lorelai', 'Amelie', 'Den'];
+let MiddleNumber = ((StudentsNames.length - 1) / 2);
+let MiddleName = (StudentsNames[MiddleNumber]);
+console.log(MiddleName);
 
-let name = 'john'; //string
+//task 3  
+//part 1
 
-let age = 32; //number
-
-let canBuyAlcohol = true; //boolean
-
-let car; //undefined
-
-let dataFetched = null; //null
-
-let id = Symbol('id'); //symbol
-
-
-//referrence types 
-
-var person = {
-    name : 'John',
-    lastname : 'Smith',
-    age : 32,
-    certificates : null,
-} // object
-
-person.fatherName = 'Mathew';
-
-//delete person.name;
-
-let kilogramArr = [10,20,30,40,117];
-let userArr = [{name : 'sam', lastname : 'smith'},person, 10] //array
-
-console.log(typeof kilogramArr)
-
-let tp = typeof kilogramArr;
-
-console.log(typeof tp)
-
-//console.log(person)
-
-
-let num1 = 32;
-
-let num2 = 33;
-
-let result = num1 + num2;
-
-let num3 = 34;
-
-let num4 = 42;
-
-let result1 = num3 + num4;
-
-function sum(x,y) {
-    console.log(x+y);
+var student = {
+    firstName : 'Nina',
+    lastName : 'tsiklauri',
+    age : 21,
+    subjects : ['math', 'javascript', 'history', 'english', 'economy'],
+    roommate : {
+        fullName : 'ani devdariani',
+        age : 21,
+    }
+}
+//part 2 
+for (let element of student.subjects){
+    console.log (element)
 }
 
-function sayHello () {
-    console.log('say hi')
-}
+student.fullName = student.firstName + ' ' + student.lastName;
+console.log (student.fullName)
 
-let x = sum(23,42)
-sum(10,12) //function 
+student.fullName = 'nina tsiklauri';
+console.log(student.fullName);
 
-console.dir(typeof sum)
+var result = student.fullName + ' ' + 'is' + ' ' + student.age + ' ' + 'years old' + ' ' + 'and her roommate is' + ' ' + student.roommate.fullName;
+console.log(result);
 
-sayHello();
-sayHello();
-sayHello();
-sayHello();
+//task 4 
 
-
-for(let i = 0; i < kilogramArr.length; i++) {
-    console.log(kilogramArr[i])
-} 
+let fruitArr = ['banana', 'orange', 'apple', 'mango', 2, 12 ]
