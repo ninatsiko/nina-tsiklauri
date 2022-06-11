@@ -42,4 +42,24 @@ console.log(result);
 
 //task 4 
 
-let fruitArr = ['banana', 'orange', 'apple', 'mango', 2, 12 ]
+let fruitsArr = ['banana', 'orange', 'apple', 'mango', 2, 12 ];
+let i = 0;
+
+while(typeof fruitsArr[i] == 'string') {
+    console.log(fruitsArr[i]);
+    i++;
+}
+
+// task5
+
+let numArr = [12, 23,43,11, 9,2,121,90];
+
+for( let i = 0; i < numArr.length;i++){
+    let element = numArr[i];
+    if(element > 31 && element%2 == 0){
+        console.log('metia luwia');
+    }
+    else if (element < 31 && element%2 == 1){
+        console.log('naklebia 31 da kenti')
+    }
+}
