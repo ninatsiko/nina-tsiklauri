@@ -88,7 +88,7 @@ function angleCounter (angles)
     }
 }
 
-angleCounter (183);
+angleCounter (205);
 
 
 //task 5
