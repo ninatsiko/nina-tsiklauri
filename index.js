@@ -1,7 +1,7 @@
 // task 1 
 
 let sampleObject = {
-    isItarable : true,
+    isItarable : false,
     sampleArray : [12,63,21,34,98,57]
 }
 
@@ -61,8 +61,6 @@ console.log(result2);
 
 function angleCounter (angles) 
 {
-    
-    
     switch (true) 
     {
      
@@ -92,5 +90,38 @@ angleCounter (205);
 
 
 //task 5
+students  = 
+[ {name: 'student1', grade : 91}, {name: 'student2', grade : 71}, {name: 'student3', grade : 45} ]
 
+function  checkStudentGrade(studentsArray) 
+{
+    for (i=0; i<studentsArray.length ; i++) 
+    {
+        switch (true) 
+    {
+        case ( studentsArray[i].grade >= 0  && studentsArray[i].grade <= 50 ) :
+            studentsArray[i].finalResult='F' ;
+        break ;
+        case ( studentsArray[i].grade >= 51  && studentsArray[i].grade <= 60 ) :
+            studentsArray[i].finalResult='E' ;
+        break ;
+        case ( studentsArray[i].grade >= 61  && studentsArray[i].grade <= 70 ) :
+            studentsArray[i].finalResult='D' ;
+        break ;
+        case ( studentsArray[i].grade >= 71  && studentsArray[i].grade <= 80 ) :
+            studentsArray[i].finalResult='C' ;
+        break ;
+        case ( studentsArray[i].grade >= 81  && studentsArray[i].grade <= 100 ) :
+        studentsArray[i].finalResult='A' ;
+        break ;
+        }
+
+    }
+
+    for (i=0; i<studentsArray.length ; i++)
+    {     
+   console.log(studentsArray[i]) ; 
+    }
+}
+checkStudentGrade(students);
 
